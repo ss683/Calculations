@@ -1,0 +1,38 @@
+package com.company;
+import java.util.Scanner;
+import java.util.Random;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        while (true) {
+
+            System.out.println("Enter a number.");
+            int in = input.nextInt();
+
+            System.out.println("Enter another number to multiply to your number.");
+            int in2 = input.nextInt();
+            Random randomGenerator = new Random();
+            for (int i = 1; i <= 1; ++i) {
+                int random = randomGenerator.nextInt(10);
+
+                int answer = (in * in2) - (random);
+                System.out.println(in + " x " + in2 + " = " + answer);
+
+                System.out.println();
+
+                System.out.println("Oops! What do you have to subtract from the correct answer to get my answer?");
+
+                int in3 = input.nextInt();
+                if (in3 == random) {
+                    System.out.println("You are correct. Good Job!");
+                    System.out.println();
+                }
+                    else if(in3 != random) {
+                    System.out.println("Incorrect. Sorry!");
+                    System.out.println();
+                }
+                }
+            }
+        }
+    }
